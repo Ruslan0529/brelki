@@ -145,8 +145,8 @@ dialog::backdrop { background: #21141d99; }
   .footer p { max-width: 160px; }
 }
 
-/* Explicit dark colours keep browser night-mode transformations from mixing
-   light card backgrounds with dark form controls and low-contrast lettering. */
+/* The authored dark palette. Samsung's forced page darkening is a separate
+   browser setting and can still override these colours. */
 :root[data-theme="dark"] {
   color-scheme: only dark;
   --paper: #18151b;
@@ -202,3 +202,63 @@ dialog::backdrop { background: #21141d99; }
 :root[data-theme="dark"] .close-button { color: #d2b4c6; }
 :root[data-theme="dark"] .photo-upload { background: #231e26; border-color: #b585a4; }
 :root[data-theme="dark"] .field-error { color: #ffb4a8; }
+
+/* System preference also works before JavaScript loads or when it is blocked. */
+@media (prefers-color-scheme: dark) {
+:root:not([data-theme="light"]) {
+  color-scheme: only dark;
+  --paper: #18151b;
+  --ink: #f2ebf0;
+  --muted: #b9aab4;
+  --accent: #dea4be;
+  --line: #463843;
+}
+:root:not([data-theme="light"]) ::selection { background: #713b57; color: #fff2f8; }
+:root:not([data-theme="light"]) :is(.brand-caption, .hero .eyebrow, .section-heading .eyebrow, .faq .eyebrow, .hero-footnote, .illustration-note, .legend-value, .extra small, .builder-total>div>span, .builder-total small, .field-note, .preview-top, .preview-note, .footer p, .footer>span, .footer-social, .demo-note, .optional, .photo-upload small, .order-success p:not(.eyebrow), .faq-caption) { color: var(--muted); }
+:root:not([data-theme="light"]) .header-cta { border-color: #69535f; }
+:root:not([data-theme="light"]) :is(.header-cta:hover, .theme-toggle:hover) { background: #352735; }
+:root:not([data-theme="light"]) .button-dark { background: #824462; color: #fff5fa; }
+:root:not([data-theme="light"]) .button-dark:hover { background: #985476; }
+:root:not([data-theme="light"]) .ribbon { background: #2d232c; border-color: var(--line); }
+:root:not([data-theme="light"]) .ribbon-inner { color: #d3bccb; }
+:root:not([data-theme="light"]) .ribbon i { color: #b98da7; }
+:root:not([data-theme="light"]) .peach { background: #38272e; }
+:root:not([data-theme="light"]) .olive { background: #2a3028; }
+:root:not([data-theme="light"]) .lilac { background: #342b39; }
+:root:not([data-theme="light"]) .product-tag { background: #241c24e6; color: #e1d2dc; }
+:root:not([data-theme="light"]) .circle-arrow { border-color: #6a5262; }
+:root:not([data-theme="light"]) .builder-section { background: #241d25; }
+:root:not([data-theme="light"]) .builder { border-color: #5b4353; box-shadow: 0 5px 30px #0002; }
+:root:not([data-theme="light"]) .preview-panel { background: radial-gradient(ellipse at 50% 40%, #403541, #27212b 90%); }
+:root:not([data-theme="light"]) .live-dot { background: #d89ebc; }
+:root:not([data-theme="light"]) .text-button { color: #c8afbf; }
+:root:not([data-theme="light"]) .text-button:hover { color: var(--ink); }
+:root:not([data-theme="light"]) .builder-options fieldset { border-bottom-color: var(--line); }
+:root:not([data-theme="light"]) .step-number { color: #bc9cb0; }
+:root:not([data-theme="light"]) .segmented label>span { background: #231e26; border-color: #624a59; color: #dfd3db; }
+:root:not([data-theme="light"]) .segmented input:checked+span { background: #492b3d; border-color: #b8799b; color: #f6d5e5; }
+:root:not([data-theme="light"]) .extra { background: #231e26; border-color: #624a59; }
+:root:not([data-theme="light"]) .extra:has(input:checked) { background: #492b3d; border-color: #b8799b; }
+:root:not([data-theme="light"]) .extra-symbol { color: #e0a7c4; }
+:root:not([data-theme="light"]) .check-mark { border-color: #95768b; }
+:root:not([data-theme="light"]) .extra:has(input:checked) .check-mark { background: #975778; border-color: #bf86a7; }
+:root:not([data-theme="light"]) :is(input:not([type=radio]):not([type=checkbox]):not([type=file]), textarea) { background: #231e26; border-color: #725369; color: var(--ink); caret-color: #f2c3db; }
+:root:not([data-theme="light"]) :is(input, textarea)::placeholder { color: #b5a5af; opacity: 1; }
+:root:not([data-theme="light"]) .handwritten { color: #d4a0bb; }
+:root:not([data-theme="light"]) .how-number { color: #bb94ac; }
+:root:not([data-theme="light"]) .photo-guide { background: #30232e; }
+:root:not([data-theme="light"]) .guide-icon { border-color: #805773; }
+:root:not([data-theme="light"]) .guide-icon svg { stroke: #dfadca; }
+:root:not([data-theme="light"]) .photo-guide :is(.eyebrow, p:last-child) { color: #c1a9b9; }
+:root:not([data-theme="light"]) .guide-spark { color: #ca9cba; }
+:root:not([data-theme="light"]) .faq-list summary span { color: #c4a0b8; }
+:root:not([data-theme="light"]) .final-cta .button { background: #eee4ea; color: #501b30; }
+:root:not([data-theme="light"]) .final-cta .button:hover { background: #fff6fb; }
+:root:not([data-theme="light"]) dialog { box-shadow: 0 30px 90px #0008; border: 1px solid #6d4c61; }
+:root:not([data-theme="light"]) dialog::backdrop { background: #09070bba; }
+:root:not([data-theme="light"]) .order-summary { background: #3a2735; }
+:root:not([data-theme="light"]) .close-button { color: #d2b4c6; }
+:root:not([data-theme="light"]) .photo-upload { background: #231e26; border-color: #b585a4; }
+:root:not([data-theme="light"]) .field-error { color: #ffb4a8; }
+
+}

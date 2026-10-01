@@ -87,7 +87,7 @@ function illustration(config, options = {}) {
 }
 
 function render() {
-  document.querySelector('#builder-preview').innerHTML = illustration(state, { pale: state.color === 'lilac' });
+  paintIllustration(document.querySelector('#builder-preview'), illustration(state, { pale: state.color === 'lilac' }));
   document.querySelector('#builder-preview').setAttribute('aria-label', `${PET_NAMES[state.pet]}, ${COLORS[state.color].name.toLowerCase()} шнур, ${state.metal === 'gold' ? 'золотистый' : 'серебристый'} карабин${state.heart ? ', сердечко' : ''}${state.letter ? ', именная бусина' : ''}`);
   document.querySelector('#color-label').textContent = COLORS[state.color].name;
   document.querySelector('#total-price').textContent = money(total());
@@ -120,14 +120,15 @@ try {
 } catch { /* Ignore absent or damaged local drafts. */ }
 
 document.querySelectorAll('.swatches input').forEach(input => input.setAttribute('aria-label', COLORS[input.value].name));
-document.querySelector('[data-art="hero"]').innerHTML = illustration(defaults);
+paintIllustration(document.querySelector('[data-art="hero"]'), illustration(defaults));
+paintIllustration(document.querySelector('.hero-art'), document.querySelector('#brand-seal-art').innerHTML, 'brand-seal');
 const presets = {
   peach: { ...defaults, color: 'peach' },
   olive: { ...defaults, pet: 'dog', color: 'olive', letter: true, heart: false, petName: 'Бим', metal: 'gold' },
   lilac: { ...defaults, color: 'lilac', metal: 'silver' },
 };
 for (const [key, config] of Object.entries(presets)) {
-  document.querySelector(`[data-art="${key}"]`).insertAdjacentHTML('beforeend', illustration(config, { pale: key === 'lilac' }));
+  paintIllustration(document.querySelector(`[data-art="${key}"]`), illustration(config, { pale: key === 'lilac' }));
 }
 
 form.addEventListener('input', () => {

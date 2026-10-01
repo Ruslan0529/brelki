@@ -8,6 +8,11 @@
   --line: #ded6d9;
 }
 :root[data-theme="light"] { color-scheme: only light; }
+/* Canvas keeps product colours together instead of exposing SVG fills to
+   browser night-mode transformations. Match the existing preview dimensions. */
+.keychain-svg { object-fit: contain; }
+#builder-preview canvas { height: 490px; max-width: 400px; }
+@media (max-width: 800px) { #builder-preview canvas { height: 350px; } }
 .header-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
 .theme-toggle { display: grid; place-items: center; width: 35px; height: 35px; padding: 7px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink); }
 .theme-toggle:hover { background: #eae0e5; }

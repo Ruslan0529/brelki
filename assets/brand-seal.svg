@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+  <title>obscurium.lab — знак мастерской</title>
+  <defs><radialGradient id="wine"><stop stop-color="#6c203c"/><stop offset=".72" stop-color="#4b1329"/><stop offset="1" stop-color="#2e111d"/></radialGradient><linearGradient id="silver" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#8b9294"/><stop offset=".25" stop-color="#faf8f0"/><stop offset=".55" stop-color="#bbbfc0"/><stop offset=".85" stop-color="#faf8f0"/><stop offset="1" stop-color="#959b9c"/></linearGradient></defs>
+  <circle cx="180" cy="180" r="179" fill="url(#wine)"/>
+  <g fill="none" stroke="url(#silver)"><circle cx="180" cy="180" r="170" stroke-width="2.6"/><circle cx="180" cy="180" r="163" stroke-width="1.5"/>
+    <g transform="translate(29 112) scale(.88)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 49C4 49 4 119 18 119S32 49 18 49Z"/><path d="M46 15v104M46 62C65 27 76 67 76 85S65 137 46 106"/><path d="M111 65C111 43 89 43 89 67C89 86 113 84 113 103C113 126 88 125 88 103"/><path d="M151 65C145 41 124 41 124 84C124 126 145 125 151 103"/><path d="M165 51v48C165 128 190 125 190 99V51M190 98v21"/><path d="M204 119V51m0 17q10-24 22-16"/><path d="M238 51v68m0-85v1"/><path d="M252 51v48C252 128 277 125 277 99V51M277 98v21"/><path d="M291 119V51m0 15q14-29 22 0v53m0-53q16-29 25 0v53"/><path d="M204 88v61q0 12 9 12M222 142q0-17 10-17t10 17v17m0-15q0 17-10 17t-10-17M255 113v47m0-27q19-21 19 11t-19 7M47 148h245"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#501b30">
+  <meta name="description" content="obscurium.lab — фигурки, обвесы и декор из глины. Соберите персональный брелок с мордочкой вашего питомца.">
+  <title>obscurium.lab — вещи с характером</title>
+  <link rel="icon" href="assets/brand-seal.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="brand.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="header wrap">
+    <a href="#" class="brand" aria-label="obscurium.lab — на главную"><span class="brand-wordmark" aria-hidden="true"></span><span class="brand-caption">ФИГУРКИ · ОБВЕСЫ<br>ДЕКОР ИЗ ГЛИНЫ</span></a>
+    <nav aria-label="Основная навигация"><a href="#collection">Вдохновение</a><a href="#how">Как это работает</a><a href="#faq">Вопросы</a></nav>
+    <a href="#builder" class="header-cta">Собрать свой <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-star">✳</span> O.LAB / ЛАБОРАТОРИЯ РУЧНОЙ РАБОТЫ</p>
+        <h1>Маленькие вещи.<br>Большой<br><em>характер.</em></h1>
+        <p class="hero-description">Фигурки, обвесы и декор из глины.<br class="desktop-break"> Начните с брелока по фото вашего питомца —<br class="desktop-break"> с теми самыми ушками, пятнышками и взглядом.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#builder">Создать свой брелок <span aria-hidden="true">↗</span></a><span class="price-note">от 18 000 ₸<small>один и неповторимый</small></span></div>
+        <div class="hero-footnote"><span class="heart-icon" aria-hidden="true">✧</span><span>Вылеплено вручную. Придумано для вас.</span></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Иллюстрация брелока с рыжим котом и бордовым шнуром в стиле obscurium.lab">
+        <div class="art-grid"></div><span class="art-kicker">OBSCURIUM.LAB / OBJECT NO. 01</span>
+        <div class="hero-keychain" data-art="hero"></div>
+        <img class="brand-seal" src="assets/brand-seal.svg" alt="">
+        <div class="round-stamp">одна вещь.<br><strong>ваша</strong><br>история.</div>
+        <span class="hand-note">характер в деталях</span><svg class="note-arrow" viewBox="0 0 85 70" aria-hidden="true"><path d="M4 5Q77 0 58 59M48 49l10 12 12-9"/></svg>
+        <span class="art-caption">POLYMER CLAY / HANDCRAFTED / ONE OF A KIND</span>
+      </div>
+    </section>
+    <div class="ribbon"><div class="wrap ribbon-inner"><span>Мордочка по вашему фото</span><i>✳</i><span>Каждый брелок уникален</span><i>✳</i><span>Соберите своё сочетание</span><i>✳</i><span>Маленький подарок с большим смыслом</span></div></div>
+    <section id="collection" class="collection wrap section">
+      <div class="section-heading"><div><p class="eyebrow">01 / НЕМНОГО ВДОХНОВЕНИЯ</p><h2>У каждого —<br><em>свой характер.</em></h2></div><p>Нежный, озорной или самый серьёзный.<br>Начните с готового сочетания и добавьте своё.</p></div>
+      <div class="product-grid">
+        <button class="product-card" data-preset="peach"><div class="product-art peach" data-art="peach"><span class="product-tag">для нежных натур</span></div><div class="product-info"><div><h3>Персиковое настроение</h3><p>Тёплый шнур · рыжий кот · сердечко</p></div><span class="circle-arrow" aria-hidden="true">↗</span></div></button>
+        <button class="product-card" data-preset="olive"><div class="product-art olive" data-art="olive"><span class="product-tag">для лучших друзей</span></div><div class="product-info"><div><h3>Лесные прогулки</h3><p>Оливковый шнур · пёс · именная бусина</p></div><span class="circle-arrow" aria-hidden="true">↗</span></div></button>
+        <button class="product-card" data-preset="lilac"><div class="product-art lilac" data-art="lilac"><span class="product-tag">для тех, кто с изюминкой</span></div><div class="product-info"><div><h3>Лавандовые сны</h3><p>Лиловый шнур · светлый кот · сердечко</p></div><span class="circle-arrow" aria-hidden="true">↗</span></div></button>
+      </div>
+      <p class="illustration-note">Пока здесь иллюстрации сочетаний. Скоро покажем настоящие работы мастерской.</p>
+    </section>
+    <section id="builder" class="builder-section section">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">02 / ВАШ МАЛЕНЬКИЙ ШЕДЕВР</p><h2>Любовь — в деталях.<br><em>Выберите свои.</em></h2></div><p>Ваше сочетание цвета, формы и деталей.<br>И брелок, которого больше ни у кого нет.</p></div>
+        <div class="builder">
+          <div class="preview-panel"><div class="preview-top"><span><span class="live-dot"></span> ВАШ БРЕЛОК</span><button class="text-button" id="reset-builder">Сбросить ↺</button></div><div id="builder-preview" role="img" aria-label="Предпросмотр выбранного брелока"></div><p class="preview-note">Мордочку сделаем по фото вашего питомца.<br>Здесь — пример цвета и сочетания деталей.</p></div>
+          <form id="builder-form" class="builder-options">
+            <fieldset><legend><span class="step-number">01</span> Кто ваш любимец?</legend><div class="segmented pet-options"><label><input type="radio" name="pet" value="cat" checked><span>Котик</span></label><label><input type="radio" name="pet" value="dog"><span>Пёсик</span></label><label><input type="radio" name="pet" value="other"><span>Другой питомец</span></label></div><p id="other-pet-note" class="field-note" hidden>Сейчас показан условный силуэт. В заявке расскажите о вашем питомце.</p></fieldset>
+            <fieldset><legend><span class="step-number">02</span> Цвет шнура <span id="color-label" class="legend-value">Бордовый</span></legend><div class="swatches"><label style="--swatch:#762943"><input type="radio" name="color" value="burgundy" checked><span aria-label="Бордовый" title="Бордовый"></span></label><label style="--swatch:#b96e53"><input type="radio" name="color" value="peach"><span aria-label="Персиковый" title="Персиковый"></span></label><label style="--swatch:#7c8764"><input type="radio" name="color" value="olive"><span aria-label="Оливковый" title="Оливковый"></span></label><label style="--swatch:#a995bc"><input type="radio" name="color" value="lilac"><span aria-label="Лавандовый" title="Лавандовый"></span></label><label style="--swatch:#648ba0"><input type="radio" name="color" value="blue"><span aria-label="Голубой" title="Голубой"></span></label><label style="--swatch:#dabcb0"><input type="radio" name="color" value="cream"><span aria-label="Пудровый" title="Пудровый"></span></label><label style="--swatch:#444342"><input type="radio" name="color" value="black"><span aria-label="Графитовый" title="Графитовый"></span></label></div></fieldset>
+            <fieldset><legend><span class="step-number">03</span> Добавим немного характера?</legend><div class="extras"><label class="extra"><input type="checkbox" name="heart" checked><span class="extra-symbol">♡</span><span>Сердечко<small>+ 2 000 ₸</small></span><span class="check-mark">✓</span></label><label class="extra"><input type="checkbox" name="letter"><span class="extra-symbol letter-symbol">А</span><span>Именная бусина<small>+ 1 500 ₸</small></span><span class="check-mark">✓</span></label></div><div id="name-field" class="name-field" hidden><label for="pet-name">Как зовут питомца?</label><input id="pet-name" name="petName" maxlength="16" placeholder="Например, Персик"><p class="field-note">Первая буква появится на бусине.</p></div></fieldset>
+            <fieldset><legend><span class="step-number">04</span> Последний штрих</legend><div class="segmented"><label><input type="radio" name="metal" value="silver" checked><span>Серебристый карабин</span></label><label><input type="radio" name="metal" value="gold"><span>Золотистый карабин</span></label></div></fieldset>
+            <div class="builder-total"><div><span>Ваше сочетание</span><strong id="total-price" aria-live="polite">20 000 ₸</strong><small>Доставка рассчитывается отдельно</small></div><button type="submit" class="button button-dark">Хочу такой <span aria-hidden="true">↗</span></button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="how" class="how wrap section"><div class="section-heading"><div><p class="eyebrow">03 / ОТ ФОТО ДО БРЕЛОКА</p><h2>Всего несколько шагов<br><em>до вашей вещи.</em></h2></div><span class="handwritten">А дальше — наша забота ♡</span></div><div class="how-grid"><article><span class="how-number">01</span><h3>Соберите сочетание</h3><p>Выберите цвет и детали. Мы сохраним всё, чтобы ничего не потерялось.</p></article><article><span class="how-number">02</span><h3>Покажите любимца</h3><p>Добавьте фото, где хорошо видны мордочка, окрас и особенные приметы.</p></article><article><span class="how-number">03</span><h3>Познакомьтесь с копией</h3><p>Перед отправкой согласуем с вами готовую работу и все детали заказа.</p></article><article><span class="how-number">04</span><h3>Будьте всегда рядом</h3><p>На ключах, рюкзаке или любимой сумке. Маленькая копия вашего любимца отправится с вами.</p></article></div></section>
+    <section class="photo-guide wrap"><div class="guide-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M7 15h9l4-6h9l4 6h8v25H7Z"/><circle cx="24" cy="27" r="8"/></svg></div><div><p class="eyebrow">МАЛЕНЬКИЙ СОВЕТ</p><h3>Хорошее фото — больше сходства.</h3><p>Дневной свет, мордочка крупным планом и без фильтров. Добавьте фото сбоку, если у питомца есть особенное пятнышко.</p></div><span class="guide-spark" aria-hidden="true">✳</span></section>
+    <section id="faq" class="faq wrap section"><div><p class="eyebrow">04 / ЧТО ЕЩЁ ХОЧЕТСЯ ЗНАТЬ</p><h2>Ответы<br><em>на любопытство.</em></h2><p class="faq-caption">Чтобы выбирать было легко.</p></div><div class="faq-list"><details><summary>Можно сделать не только кота или собаку?<span>+</span></summary><p>Да. Выберите «Другой питомец» в конструкторе и расскажите о нём в комментарии. Форму и детали обсудим перед изготовлением.</p></details><details><summary>Что делать, если пока нет фотографии?<span>+</span></summary><p>Сохраните сочетание без фото. Фотографии можно добавить позже, до начала изготовления.</p></details><details><summary>Будет ли брелок точно как на экране?<span>+</span></summary><p>Предпросмотр показывает сочетание деталей. Мордочка будет индивидуальной, по вашим фотографиям. Перед отправкой вы увидите готовую работу.</p></details><details><summary>Можно заказать в подарок?<span>+</span></summary><p>Конечно. Оставьте пожелание в комментарии к заявке. Если у вас пока нет фотографий питомца, их можно подготовить позже.</p></details><details><summary>Как узнать сроки и стоимость доставки?<span>+</span></summary><p>Их согласуем перед подтверждением заказа: они зависят от сложности работы и вашего города.</p></details></div></section>
+    <section class="final-cta wrap"><span class="eyebrow">OBSCURIUM.LAB / У КАЖДОЙ ВЕЩИ ЕСТЬ ХАРАКТЕР</span><h2>Ваша история.<br><em>Наша ручная работа.</em></h2><a href="#builder" class="button button-dark">Создать свой обвес <span aria-hidden="true">↗</span></a><span class="cta-doodle" aria-hidden="true">♡</span></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#" aria-label="obscurium.lab — на главную"><span class="brand-wordmark" aria-hidden="true"></span></a><p>Фигурки · обвесы · декор из глины</p><a class="footer-social" href="https://www.instagram.com/obscurium.lab/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><span>obscurium.lab · 2026</span></footer>
+  <dialog id="order-dialog" aria-label="Заявка на ваш брелок"><form id="order-form" class="order-form"><div class="modal-header"><div><p class="eyebrow">ВАШЕ СОЧЕТАНИЕ ГОТОВО</p><h2>Это будет <em>любовь.</em></h2></div><button type="button" class="close-button" aria-label="Закрыть заявку">×</button></div><div id="order-summary" class="order-summary"></div><p class="demo-note">В прототипе заявка сохраняется на этом устройстве. Отправку в мастерскую подключим перед запуском.</p><label for="customer-name">Ваше имя</label><input id="customer-name" name="customerName" autocomplete="given-name" maxlength="80" placeholder="Как к вам обращаться?" required><label for="customer-contact">Telegram, телефон или email</label><input id="customer-contact" name="contact" maxlength="120" placeholder="Чтобы обсудить ваш заказ" required><label for="pet-photos" class="photo-upload"><span>＋ Добавить фото питомца</span><small>Можно позже · до 5 фото · JPEG, PNG, WebP · до 10 МБ каждое</small><input id="pet-photos" type="file" accept="image/jpeg,image/png,image/webp" multiple></label><div id="photo-previews" class="photo-previews"></div><p id="photo-error" role="alert" class="field-error" hidden></p><label for="order-comment">Пожелания <span class="optional">необязательно</span></label><textarea id="order-comment" name="comment" rows="2" maxlength="1000" placeholder="Имя питомца, особенные приметы, нужен ли подарок…"></textarea><button type="submit" class="button button-dark save-order">Сохранить заявку <span aria-hidden="true">↗</span></button><p id="storage-error" class="field-error" role="alert" hidden></p></form><div id="order-success" class="order-success" hidden><button type="button" class="close-button" aria-label="Закрыть подтверждение">×</button><span class="success-heart" aria-hidden="true">♡</span><p class="eyebrow">ПЕРВЫЙ ШАГ СДЕЛАН</p><h2>Ваша идея<br><em>сохранена.</em></h2><p>Заявка сохранена на этом устройстве.<br>Её текст можно скопировать для отправки мастеру.<br>Фотографии прикрепите к сообщению отдельно.</p><button id="copy-order" class="button button-dark" type="button">Скопировать заявку</button><p id="copy-feedback" aria-live="polite"></p><button id="new-order" class="text-button" type="button">Вернуться к конструктору ↗</button></div></dialog>
+</body>
+</html>

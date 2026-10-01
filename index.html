@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#501b30">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4f1ed">
   <meta name="description" content="obscurium.lab — фигурки, обвесы и декор из глины. Соберите персональный брелок с мордочкой вашего питомца.">
   <title>obscurium.lab — вещи с характером</title>
   <link rel="icon" href="assets/brand-seal.svg" type="image/svg+xml">
+  <script src="theme.js"></script>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="brand.css">
+  <link rel="stylesheet" href="brand.css?v=dark-theme-1">
   <script src="app.js" defer></script>
 </head>
 <body>
   <header class="header wrap">
     <a href="#" class="brand" aria-label="obscurium.lab — на главную"><span class="brand-wordmark" aria-hidden="true"></span><span class="brand-caption">ФИГУРКИ · ОБВЕСЫ<br>ДЕКОР ИЗ ГЛИНЫ</span></a>
     <nav aria-label="Основная навигация"><a href="#collection">Вдохновение</a><a href="#how">Как это работает</a><a href="#faq">Вопросы</a></nav>
-    <a href="#builder" class="header-cta">Собрать свой <span aria-hidden="true">↗</span></a>
+    <div class="header-actions"><button type="button" id="theme-toggle" class="theme-toggle" aria-label="Включить тёмную тему" aria-pressed="false" title="Включить тёмную тему"><svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.1A8.5 8.5 0 0 1 8.9 4a8.5 8.5 0 1 0 11.1 11.1Z"/></svg><svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button><a href="#builder" class="header-cta">Собрать свой <span aria-hidden="true">↗</span></a></div>
   </header>
   <main>
     <section class="hero wrap">
